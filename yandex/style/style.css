@@ -1,0 +1,485 @@
+.page {
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: auto;
+    background-color: white;
+}
+
+.header {
+    height: 293px;
+    padding:0 50px;
+    display: flex;
+    align-items: center;
+    gap: 184px;
+}
+
+.header_nav {
+    min-width: 576px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.navigation {
+    min-width: 392px;
+}
+
+.navigation_list {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin: 0;
+    padding: 0;
+    list-style-type: circle;
+}
+
+.navigation a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    transform-origin: center;
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.navigation a:hover {
+    transform: scale(1.08);
+    opacity: 0.7;
+}
+
+.navigation a:active {
+    transform: scale(0.97);
+}
+
+.navigation_link_underline {
+    text-decoration: underline;
+}
+
+.navigation_item_no_marker {
+    list-style-type: none;
+}
+
+.header_nav img {
+    width: 148px;
+    height: 105px;
+}
+
+.header_text,
+.footer_text {
+    font-size: 18px;
+    font-style: normal;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.header_text a,
+.footer_text a {
+    color: inherit;
+}
+ 
+.title {
+    background-image:
+        linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+        url("../image/lotus-flower.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 757px;
+    padding: 165px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title_text {
+    color: white;
+    font-weight: 700;
+    font-size: clamp(48px, 9vw, 100px);
+    line-height: 1.15;
+    letter-spacing: clamp(10px, 3vw, 30px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title_text span {
+    display: block;
+    width: 100%;
+}
+
+.title_text_one {
+    text-align: left;
+}
+
+.title_text_two {
+    text-align: center;
+}
+
+.title_text_three {
+    text-align: right;
+}
+
+.title_blok {
+    min-height: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_blok p {
+    font-size: 22px;
+    color: white;
+    line-height: 1.27;
+    word-spacing: 18px;
+}
+
+.title_blok button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+    height: 51px;
+    cursor: pointer;
+    transform-origin: center;
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.title_blok button:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.04);
+}
+
+.title_blok button:active {
+    transform: scale(0.97);
+}
+
+.lots {
+    padding: 180px 24px 120px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.lots_title {
+    padding-left: 40px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.lots_bloks {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+
+.lots_card {
+    height: 596px;
+    width: 334px;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    transform-origin: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.lots_card:hover {
+    z-index: 1;
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 25%);
+}
+
+.lots_bloks_blok1 {
+    background-image:
+        linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+        url("../image/photo_lots1.png");
+}
+
+.lots_card h3 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.lots_card p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.lots_bloks_blok2 {
+    background-image:
+        linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+        url("../image/photo_lots2.jpg");
+}
+
+.lots_bloks_blok3 {
+    background-image:
+        linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+        url("../image/photo_lots3.png");
+}
+
+.lots_more {
+    margin-left: 40px;
+    text-decoration: underline;
+    color: black;
+    font-size: 20px;
+}
+
+.information {
+    padding: 0 24px;
+    min-height: 595px;
+    display: flex;
+    gap: 72px;
+}
+
+.information_logo {
+    margin-left: 47px;
+    margin-top: 35px;
+    background-color: black;
+    width: clamp(120px, 22vw, 240px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    flex-shrink: 0;
+}
+
+.information_logo img {
+    width: 62%;
+    height: auto;
+}
+
+.information_text {
+    padding-top: 133px;
+    max-width: 692px;
+    min-height: 449px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.information_text h2 {
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 76px;
+}
+
+.information_text p {
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.footer {
+    min-height: 360px;
+    padding: 180px 50px 82px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: clamp(132px, 22vw, 240px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    flex-shrink: 0;
+}
+
+.info button {
+    width: clamp(32px, 4.4vw, 48px);
+    aspect-ratio: 1;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transform-origin: center;
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.info button:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.info button:active {
+    transform: scale(0.94);
+}
+
+.navigation a:focus-visible,
+.title_blok button:focus-visible,
+.info button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
+.social_set {
+    width: 62%;
+    height: 46%;
+    object-fit: contain;
+}
+
+.navigation_footer {
+    min-width: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (max-width: 950px) {
+    .header {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 785px) {
+    .header {
+        height: auto;
+        padding: 30px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .header_nav {
+        min-width: 0;
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .navigation {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .navigation_list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header_text {
+        width: 100%;
+    }
+
+    .title_blok {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .lots_bloks {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .lots_card {
+        width: min(100%, 334px);
+        height: auto;
+        min-height: 596px;
+    }
+
+    .information {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 30px 60px;
+    }
+
+    .information_logo {
+        margin: 0;
+    }
+
+    .information_text {
+        max-width: 100%;
+        min-height: 0;
+        padding-top: 0;
+    }
+
+    .information_text h2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 530px) {
+    .header {
+        gap: 25px;
+        padding: 40px 30px;
+    }
+
+    .header_nav {
+        min-width: 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .title {
+        padding: 100px 30px 40px;
+    }
+
+    .lots {
+        padding: 80px 20px 60px;
+    }
+
+    .lots_title {
+        padding-left: 0;
+    }
+
+    .lots_more {
+        margin-left: 0;
+    }
+
+    .footer {
+        min-height: auto;
+        padding: 60px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .info {
+        flex-direction: row;
+    }
+
+    .navigation_footer {
+        min-width: 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
